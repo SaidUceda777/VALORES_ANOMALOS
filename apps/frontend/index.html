@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detección de Outliers — SUNAT Exportaciones</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>Detección de Variaciones en Valor Unitario</h1>
+      <p class="subtitulo">Exportaciones peruanas — SUNAT · Aprendizaje No Supervisado</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── Formulario de análisis ───────────────────────────── -->
+    <section class="card" id="seccion-form">
+      <h2>Parámetros de análisis</h2>
+      <form id="form-analisis" novalidate>
+
+        <div class="form-grid">
+          <div class="campo">
+            <label for="cod_analisis">Código de análisis</label>
+            <input type="text" id="cod_analisis" value="ANA1"
+                   placeholder="ANA1" required />
+            <small>Cuadro definido en el SP (ANA1, ANA2, ...)</small>
+          </div>
+
+          <div class="campo">
+            <label for="fec_ini">Fecha inicio</label>
+            <input type="date" id="fec_ini" value="2023-01-01" required />
+          </div>
+
+          <div class="campo">
+            <label for="fec_fin">Fecha fin</label>
+            <input type="date" id="fec_fin" value="2023-12-31" required />
+          </div>
+        </div>
+
+        <div class="botones">
+          <button type="submit" id="btn-analizar" class="btn-primario">
+            Ejecutar análisis
+          </button>
+          <button type="button" id="btn-limpiar" class="btn-secundario">
+            Limpiar resultados
+          </button>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- ── Estado / loader ─────────────────────────────────── -->
+    <div id="loader" class="loader oculto">
+      <div class="spinner"></div>
+      <span>Ejecutando pipeline de detección...</span>
+    </div>
+
+    <!-- ── Mensaje de error ────────────────────────────────── -->
+    <div id="mensaje-error" class="alerta-error oculto"></div>
+
+    <!-- ── Tarjetas de resumen ─────────────────────────────── -->
+    <section id="seccion-resumen" class="oculto">
+      <h2>Resumen del análisis</h2>
+      <div class="resumen-grid">
+        <div class="stat-card">
+          <span class="stat-valor" id="stat-total">—</span>
+          <span class="stat-label">Registros analizados</span>
+        </div>
+        <div class="stat-card destacado">
+          <span class="stat-valor" id="stat-outliers">—</span>
+          <span class="stat-label">Outliers detectados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-valor" id="stat-pct">—</span>
+          <span class="stat-label">% Outlier</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-valor" id="stat-partidas">—</span>
+          <span class="stat-label">Partidas con outliers</span>
+        </div>
+      </div>
+
+      <!-- Conteo por indicador -->
+      <div class="indicadores-grid" id="indicadores-grid"></div>
+    </section>
+
+    <!-- ── Tabla de outliers ────────────────────────────────── -->
+    <section id="seccion-tabla" class="card oculto">
+      <div class="tabla-header">
+        <h2>Registros con ES_OUTLIER = 1</h2>
+        <button id="btn-exportar" class="btn-secundario">Exportar CSV</button>
+      </div>
+
+      <div class="tabla-wrapper">
+        <table id="tabla-outliers">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Partida (NUM_SPN_R)</th>
+              <th>Año</th>
+              <th>Valor Unitario (USD/kg)</th>
+              <th>IQR</th>
+              <th>Z-Score</th>
+              <th>Z-Rob</th>
+              <th>IForest</th>
+              <th>LOF</th>
+              <th>DBSCAN</th>
+              <th>HBOS</th>
+              <th>Votos</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body"></tbody>
+        </table>
+      </div>
+
+      <p class="tabla-nota" id="tabla-nota"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Said Leonardo Uceda Paredes · UNI FIIS · Maestría en IA · 2026</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
