@@ -1,10 +1,8 @@
 # Detección de variaciones en el valor unitario mediante algoritmos de aprendizaje no supervisado en las exportaciones peruanas
 
 **Autor:** Said Leonardo Uceda Paredes  
-**Programa:** Maestría en Ciencias con mención en Inteligencia Artificial  
+**Programa:** Maestría en Inteligencia Artificial  
 **Institución:** Universidad Nacional de Ingeniería — Unidad de Posgrado FIIS  
-**Lugar de desarrollo:** SUNAT — Oficina Nacional de Planeamiento y Estudios Económicos  
-**Periodo:** Julio 2025 – Julio 2026
 
 ---
 
