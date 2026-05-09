@@ -3,7 +3,6 @@
 # ══════════════════════════════════════════════════════════════
 
 # ── Notebooks excluidos (trabajo en progreso / borradores) ────
-notebooks/03_sprint2/
 notebooks/04_decision/
 notebooks/05_interpretacion/
 notebooks/06_optimizacion/
@@ -62,3 +61,4 @@ config_local.py
 .DS_Store
 Thumbs.db
 desktop.ini
+comandos.txt
