@@ -15,7 +15,7 @@ El sistema identifica registros con valores unitarios inusuales usando un **ense
 ```
 INGESTA (SQL Server)
     ↓
-CLASIFICACIÓN de columnas (_R categoría · _C temporal · _V valor)
+CLASIFICACIÓN de columnas 
     ↓
 CORE 1 — Indicadores estadísticos:  IQR · Z-Score · Z-Score Robusto
     ↓
@@ -42,13 +42,7 @@ TESIS_2/
 ├── notebooks/
 │   └── 01_eda/
 │       └── eda_valores_unitarios.ipynb   ← Entregable 3: EDA + Baseline
-│
-└── docs/
-    ├── MI_TESIS.TXT                      ← Borrador de tesis
-    ├── GUIA_RESMUEN_SEMANAL.TXT          ← Plan de entregables
-    ├── ENTREGABLES_SEMANALES.TXT         ← Criterios del profesor
-    ├── EXAMEN_PARCIAL.TXT                ← Plantilla informe
-    └── REFERENCIA_COMPAÑERO.TXT          ← Referencia de proyecto similar
+
 ```
 
 ---
