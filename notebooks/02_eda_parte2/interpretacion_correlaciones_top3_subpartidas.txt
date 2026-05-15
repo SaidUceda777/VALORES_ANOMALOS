@@ -1,0 +1,66 @@
+INTERPRETACION AUTOMATICA — CORRELACIONES POR SUBPARTIDA
+==========================================================================================
+
+1. Nota metodologica
+------------------------------------------------------------------------------------------
+La correlacion global se mantiene solo como referencia exploratoria. No se usa como explicacion principal porque mezcla productos con escalas, precios y patrones comerciales diferentes.
+La interpretacion principal se realiza sobre las 3 subpartidas con mayor FOB_DOLAR, respetando la heterogeneidad del valor unitario por producto.
+Ademas, VU se deriva de FOB_DOLAR / PESO_NETO; por ello, estas correlaciones no deben interpretarse como causalidad, sino como evidencia exploratoria.
+
+2. Referencia global no concluyente
+------------------------------------------------------------------------------------------
+Globalmente, log_FOB vs log_PESO = 0.616, log_FOB vs log_VU = 0.156, y log_PESO vs log_VU = -0.516.
+Estos valores ayudan a contextualizar el dataset completo, pero la lectura relevante para outliers se realiza por subpartida.
+
+3. Analisis de las 3 principales subpartidas por FOB_DOLAR
+------------------------------------------------------------------------------------------
+
+3.1. Top 1 por FOB_DOLAR
+------------------------------------------------------------------------------------------
+Subpartida: 2603000000-MINERALES DE COBRE Y SUS CONCENTRADOS
+Registros analizados: 1,297
+FOB_DOLAR total: 15,487,877,217.01
+
+- log_FOB vs log_PESO = 0.916: relacion muy fuerte positiva.
+  Interpretacion: el valor FOB tiende a crecer de forma consistente con el peso neto dentro de esta subpartida.
+- log_FOB vs log_VU = 0.350: relacion debil positiva.
+  Interpretacion: el monto FOB no se asocia fuertemente con el valor unitario.
+- log_PESO vs log_VU = 0.064: relacion muy debil o casi nula positiva.
+  Interpretacion: el peso neto no tiene una asociacion fuerte con el valor unitario.
+
+Conclusion: la relacion dominante en esta subpartida es FOB vs peso neto. Para detectar outliers, conviene revisar desviaciones del VU respecto a operaciones de peso comparable.
+
+3.2. Top 2 por FOB_DOLAR
+------------------------------------------------------------------------------------------
+Subpartida: 7108120000-ORO EN LAS DEMAS FORMAS EN BRUTO
+Registros analizados: 14,491
+FOB_DOLAR total: 10,925,238,241.87
+
+- log_FOB vs log_PESO = 0.760: relacion fuerte positiva.
+  Interpretacion: el valor FOB tiende a crecer de forma consistente con el peso neto dentro de esta subpartida.
+- log_FOB vs log_VU = 0.159: relacion muy debil o casi nula positiva.
+  Interpretacion: el monto FOB no se asocia fuertemente con el valor unitario.
+- log_PESO vs log_VU = -0.373: relacion debil negativa.
+  Interpretacion: el peso neto no tiene una asociacion fuerte con el valor unitario.
+
+Conclusion: la relacion dominante en esta subpartida es FOB vs peso neto. Para detectar outliers, conviene revisar desviaciones del VU respecto a operaciones de peso comparable.
+
+3.3. Top 3 por FOB_DOLAR
+------------------------------------------------------------------------------------------
+Subpartida: 7403110000-CATODOS Y SECCIONES DE CATODOS DE COBRE REFINADO
+Registros analizados: 948
+FOB_DOLAR total: 2,270,523,058.71
+
+- log_FOB vs log_PESO = 0.957: relacion muy fuerte positiva.
+  Interpretacion: el valor FOB tiende a crecer de forma consistente con el peso neto dentro de esta subpartida.
+- log_FOB vs log_VU = 0.146: relacion muy debil o casi nula positiva.
+  Interpretacion: el monto FOB no se asocia fuertemente con el valor unitario.
+- log_PESO vs log_VU = -0.048: relacion muy debil o casi nula negativa.
+  Interpretacion: el peso neto no tiene una asociacion fuerte con el valor unitario.
+
+Conclusion: la relacion dominante en esta subpartida es FOB vs peso neto. Para detectar outliers, conviene revisar desviaciones del VU respecto a operaciones de peso comparable.
+
+4. Conclusion general del bloque
+------------------------------------------------------------------------------------------
+La evidencia principal debe leerse por subpartida. Si una subpartida muestra alta correlacion entre FOB y peso, el valor FOB responde principalmente al volumen fisico. Si muestra mayor relacion entre FOB y VU, el precio unitario tiene mayor peso en el monto total.
+Para la deteccion de outliers, esto justifica que las reglas IQR, log1p, winsorizacion o Isolation Forest se apliquen respetando NUM_SPN_R. Un valor unitario extremo solo tiene sentido si se compara contra productos equivalentes.

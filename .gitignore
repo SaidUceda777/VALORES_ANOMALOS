@@ -9,16 +9,8 @@ notebooks/06_optimizacion/
 
 # ── Guía interna del curso (no va al repositorio) ─────────────
 GUIA/
-
-# ── Datos crudos (archivos grandes / sensibles) ───────────────
-data/EXPORTACIONES.txt
-data/EXPORTACIONES_LIMPIO_UTF8.txt
-data/*.txt
-data/*.csv
-
-# ── Logs de experimentos generados localmente ─────────────────
-logs/
-
+data/EXPORTACIONES.txt  
+data/EXPORTACIONES_LIMPIO_UTF8.txt 
 # ── Figuras generadas automáticamente ────────────────────────
 notebooks/**/*.png
 *.png

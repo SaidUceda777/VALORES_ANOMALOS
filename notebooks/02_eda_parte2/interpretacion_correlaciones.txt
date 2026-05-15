@@ -1,0 +1,29 @@
+INTERPRETACIÓN AUTOMÁTICA — CORRELACIONES
+================================================================================
+
+1. Lectura global
+--------------------------------------------------------------------------------
+La correlación Spearman entre log_FOB y log_PESO es 0.616, lo que indica una relación fuerte positiva. Esto permite evaluar si el valor FOB crece de manera consistente con el peso neto.
+La correlación Spearman entre log_FOB y log_VU es 0.156, lo que indica una relación muy debil o casi nula positiva. Esta relación ayuda a observar si las operaciones con mayor valor FOB también presentan mayor valor unitario.
+La correlación Spearman entre log_PESO y log_VU es -0.516, lo que indica una relación moderada negativa. Una relación negativa puede sugerir que operaciones con menor peso tienden a mostrar valores unitarios más altos.
+
+2. Advertencia metodológica
+--------------------------------------------------------------------------------
+La matriz debe interpretarse como análisis exploratorio, no como evidencia causal, porque el valor unitario se deriva de la relación entre FOB_DOLAR y PESO_NETO. Por ello, las correlaciones globales pueden estar influenciadas por la fórmula de construcción del VU.
+
+3. Lectura por subpartida
+--------------------------------------------------------------------------------
+Entre las subpartidas analizadas, la mayor relación entre log_FOB y log_PESO se observa en NUM_SPN_R=2608000090-MINERALES DE CINC Y SUS DEMAS CONCENTRADOS, con correlación 0.965.
+La mayor relación entre log_FOB y log_VU se observa en NUM_SPN_R=804400000-AGUACATES (PALTAS) , FRESCAS O SECAS, con correlación 0.607.
+La mayor relación entre log_PESO y log_VU se observa en NUM_SPN_R=7108120000-ORO EN LAS DEMAS FORMAS EN BRUTO, con correlación -0.373.
+
+4. Lectura por aduana
+--------------------------------------------------------------------------------
+Por aduana, la mayor relación entre log_FOB y log_PESO se observa en MOLLENDO - MATARANI, con correlación 0.876.
+La mayor relación entre log_FOB y log_VU se observa en CHICLAYO, con correlación 0.815.
+La mayor relación entre log_PESO y log_VU se observa en PUERTO MALDONADO, con correlación -0.913.
+
+5. Conclusión
+--------------------------------------------------------------------------------
+La relación más relevante a nivel global es log_FOB vs log_PESO. Esto sugiere que el valor FOB está más asociado al peso neto que al valor unitario.
+Para el análisis de outliers, la interpretación más útil no debe quedarse en la correlación global. Debe revisarse por subpartida y por aduana, porque el valor unitario depende del producto y del patrón operativo.
