@@ -1,0 +1,4 @@
+fecha_ejecucion|seed|split|periodo|hash_snapshot_sha256|variante|modelo|f1|precision|recall|pr_auc|detectados|tasa_detectada|latencia_ms|mejora_vs_baseline
+2026-05-22 19:12:42|42|Grupal por ADUANA|2024-01-01 a 2024-12-31|bd70c05d1c0f5e10f3628e56fa6f31bf6042f3b7f774966ed8814b776517c97f|B_LOG|IQR sobre log1p(VU)|0.2904|0.1798|0.755|0.1545|43007|0.322|79.7614|0.0376
+2026-05-22 19:12:42|42|Grupal por ADUANA|2024-01-01 a 2024-12-31|bd70c05d1c0f5e10f3628e56fa6f31bf6042f3b7f774966ed8814b776517c97f|A_BASELINE|IQR sobre VU original|0.2528|0.1539|0.7082|0.1314|47130|0.3528|87.6571|0.0
+2026-05-22 19:12:42|42|Grupal por ADUANA|2024-01-01 a 2024-12-31|bd70c05d1c0f5e10f3628e56fa6f31bf6042f3b7f774966ed8814b776517c97f|C_WINS|IQR sobre VU winsorizado P5-P95|0.0673|0.0567|0.0829|0.075|14974|0.1121|253.2401|-0.1855
