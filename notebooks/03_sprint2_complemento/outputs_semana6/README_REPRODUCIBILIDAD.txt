@@ -6,7 +6,7 @@ Comando sugerido:
 Parametros:
     seed=42
     periodo=2024-01-01 a 2024-12-31
-    split=Grupal por ADUANA
+    split=Split 70/30 dentro de cada NUM_SPN_R
     metrica_principal=F1-score
     metricas_secundarias=precision, recall, PR-AUC, detectados, tasa_detectada, latencia_ms
 
@@ -20,11 +20,11 @@ Hash snapshot SHA256:
 
 Decision tecnica:
     adoptar=B_LOG - IQR sobre log1p(VU)
-    f1=0.2904
-    precision=0.1798
-    recall=0.7550
-    pr_auc=0.1545
-    latencia_ms=79.7614
+    f1=0.7327
+    precision=0.7121
+    recall=0.7545
+    pr_auc=0.5500
+    latencia_ms=137.5275
 
 Riesgos y siguientes pasos:
     1. La etiqueta y_true es proxy estadistica; requiere validacion experta para reducir falsos positivos.
