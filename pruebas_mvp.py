@@ -8,6 +8,13 @@
 #   python pruebas_mvp.py --prueba4            → flujo completo sin BD
 #   python pruebas_mvp.py --prueba1 --prueba2  → varias a la vez
 #   python pruebas_mvp.py                      → todas las pruebas
+
+# git status
+# git pull origin main
+# git switch -c sprint-semana-6
+# git add .
+# git commit -m "Agrega notebook de entrega sprint semana 6"
+# git push -u origin sprint-semana-6
 # ============================================================
 
 import sys
