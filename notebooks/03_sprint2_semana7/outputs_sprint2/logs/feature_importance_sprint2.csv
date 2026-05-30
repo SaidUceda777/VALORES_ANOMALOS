@@ -1,0 +1,9 @@
+feature|importance_rf|importance_permutation_mean|importance_permutation_std
+ratio_vu_mediana_train|0.374848|0.673625|0.002585
+z_relativo_train|0.209402|0.496093|0.00358
+registros_grupo_train|0.118549|0.1894|0.001946
+VU|0.092515|0.096124|0.001233
+LOG_VU|0.084118|0.091552|0.001169
+FOB_DOLAR|0.052983|0.022864|0.001101
+LOG_FOB|0.05167|0.019384|0.000844
+aduana_freq_train|0.015915|0.010906|0.001056

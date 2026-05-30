@@ -1,0 +1,10 @@
+item_validacion|estado|evidencia
+Split correcto por subpartida|OK|Split 70/30 dentro de cada NUM_SPN_R
+Fit solo en train|OK|IQR, P5/P95 y features auxiliares se ajustan solo con train
+Seeds fijadas|OK|SEED=42
+Mismo protocolo que Semana 5 / Semana 6|OK|Mismo dataset, misma etiqueta proxy y mismas metricas base
+Sin cambios de data entre baseline y evaluacion final|OK|Hash snapshot=64e301537f11093ea2b54fd90fd4cb7c57825c226f3718c0eb70a65b9ceb6774
+Logs completos|OK|Config, metricas, timestamp, hash y README exportados
+Ablation study|OK|A_BASELINE vs B_LOG vs C_WINS
+Estabilidad entre folds|OK|Cross-validation por subpartida ejecutada
+Diagnosticos|OK|PR curve, matriz de confusion, curva de estabilidad, importancia y calibracion auxiliar
