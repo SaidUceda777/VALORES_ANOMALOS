@@ -1,0 +1,14 @@
+campo|valor
+busqueda_ganadora|RANDOM
+trial_ganador|3
+metodo|IQR
+feature|LOG_VU
+k_iqr|2.1085
+z_umbral|2.6817
+usar_winsor|False
+p_inf|0.0467
+p_sup|0.979
+f1_cv_ganador|0.6
+f1_holdout_ganador|0.7958
+f1_baseline_holdout|0.6504
+criterio_decision|Se elige la configuracion con mayor F1 promedio en validacion por subpartida. Se usa holdout como verificacion final y no como mecanismo de ajuste.

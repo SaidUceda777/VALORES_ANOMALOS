@@ -1,0 +1,3 @@
+busqueda|trials_ejecutados|trials_completos|trials_pruned|mejor_f1_cv|promedio_f1_cv|mejor_holdout_f1|latencia_ms_promedio
+BAYES|9|0|9|0.6|0.2753||64.2974
+RANDOM|11|0|11|0.6|0.3063|0.7958|65.223

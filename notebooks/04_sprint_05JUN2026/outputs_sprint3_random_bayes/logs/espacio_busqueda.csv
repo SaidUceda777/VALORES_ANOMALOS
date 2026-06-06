@@ -1,0 +1,8 @@
+hiperparametro|tipo|rango
+metodo|categorico|"IQR | ROBUST_Z"
+feature|categorico|"VU | LOG_VU"
+k_iqr|continuo|1.0 a 3.5
+z_umbral|continuo|2.0 a 5.0
+usar_winsor|booleano|"False | True"
+p_inf|continuo|0.005 a 0.050
+p_sup|continuo|0.950 a 0.995

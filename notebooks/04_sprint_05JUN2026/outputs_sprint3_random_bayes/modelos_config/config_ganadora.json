@@ -1,0 +1,23 @@
+{
+  "fecha_ejecucion": "2026-06-05 19:28:51",
+  "configuracion": {
+    "metodo": "IQR",
+    "feature": "LOG_VU",
+    "k_iqr": 2.1085354970683277,
+    "z_umbral": 2.681716165354331,
+    "usar_winsor": false,
+    "p_inf": 0.04670442449818708,
+    "p_sup": 0.9789739304036299
+  },
+  "metricas_holdout": {
+    "precision": 0.9542642509942554,
+    "recall": 0.6825221238938053,
+    "f1": 0.7958356366316566,
+    "pr_auc": 0.6668053755662212,
+    "detectados": 4526,
+    "tasa_detectada": 0.03491691225254972,
+    "latencia_ms": 259.1190999999071,
+    "registros_test": 129622
+  },
+  "hash_snapshot_sha256": "64e301537f11093ea2b54fd90fd4cb7c57825c226f3718c0eb70a65b9ceb6774"
+}

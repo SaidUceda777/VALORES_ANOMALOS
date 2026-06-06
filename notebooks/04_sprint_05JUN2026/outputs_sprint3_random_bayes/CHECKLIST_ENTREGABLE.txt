@@ -1,0 +1,16 @@
+
+CHECKLIST ENTREGABLE
+
+[OK] Notebook independiente.
+[OK] Carga datos desde SQL Server o CSV.
+[OK] Mantiene separacion por subpartida.
+[OK] Ajusta parametros solo con train.
+[OK] Ejecuta Random Search.
+[OK] Ejecuta Bayes Search con Optuna o fallback secuencial.
+[OK] Implementa pruning.
+[OK] Implementa early stopping.
+[OK] Guarda logs con separador pipe.
+[OK] Genera tabla top-k.
+[OK] Genera grafico de evolucion.
+[OK] Exporta configuracion ganadora.
+[OK] Resume espacio, presupuesto y decision.
