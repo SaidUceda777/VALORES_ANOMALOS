@@ -1,5 +1,5 @@
 {
-  "fecha_ejecucion": "2026-06-05 19:28:51",
+  "fecha_ejecucion": "2026-06-12 19:12:46",
   "configuracion": {
     "metodo": "IQR",
     "feature": "LOG_VU",
@@ -16,7 +16,7 @@
     "pr_auc": 0.6668053755662212,
     "detectados": 4526,
     "tasa_detectada": 0.03491691225254972,
-    "latencia_ms": 259.1190999999071,
+    "latencia_ms": 252.12549999923795,
     "registros_test": 129622
   },
   "hash_snapshot_sha256": "64e301537f11093ea2b54fd90fd4cb7c57825c226f3718c0eb70a65b9ceb6774"

@@ -1,7 +1,7 @@
 
 ENTREGABLE SPRINT 3 - RANDOM SEARCH, BAYES SEARCH, PRUNING Y EARLY STOPPING
 
-Fecha de ejecucion: 2026-06-05 19:32:50
+Fecha de ejecucion: 2026-06-12 19:12:47
 Periodo: 2024-01-01 a 2024-12-31
 Fuente de datos: SQL_SERVER
 Seed: 42
@@ -47,7 +47,7 @@ Metricas holdout ganadora:
   "pr_auc": 0.6668053755662212,
   "detectados": 4526,
   "tasa_detectada": 0.03491691225254972,
-  "latencia_ms": 259.1190999999071,
+  "latencia_ms": 252.12549999923795,
   "registros_test": 129622
 }
 
