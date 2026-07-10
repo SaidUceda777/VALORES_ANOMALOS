@@ -1,0 +1,6 @@
+subpartida|n_registros|baseline_iqr_casos|actual_2_mas_casos|actual_any_casos|iqr_casos|z_score_casos|lof_casos|baseline_iqr_pct|actual_2_mas_pct|actual_any_pct|variacion_casos_revision|reduccion_revision_pct|lectura_tecnica
+1008509000|1294|154|21|198|154|16|65|11.901081916537867|1.6228748068006182|15.301391035548686|-133|86.36363636363636|La version actual prioriza menos casos y reduce ruido frente a IQR.
+0810909000|1013|39|36|54|39|14|51|3.8499506416584404|3.5538005923000986|5.330700888450148|-3|7.692307692307687|La version actual prioriza menos casos y reduce ruido frente a IQR.
+2309909000|949|52|23|77|52|9|48|5.47945205479452|2.423603793466807|8.113804004214963|-29|55.769230769230774|La version actual prioriza menos casos y reduce ruido frente a IQR.
+0811909100|918|60|31|75|60|7|46|6.535947712418301|3.376906318082789|8.169934640522875|-29|48.33333333333333|La version actual prioriza menos casos y reduce ruido frente a IQR.
+2603000000|427|39|16|45|39|6|22|9.133489461358314|3.747072599531616|10.53864168618267|-23|58.97435897435898|La version actual prioriza menos casos y reduce ruido frente a IQR.

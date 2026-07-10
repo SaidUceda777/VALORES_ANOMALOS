@@ -1,0 +1,6 @@
+tipo|hallazgo|evidencia
+funciona|Tratar cada subpartida como slice independiente permite comparar distribuciones propias de V.U.|Se analizaron 5 subpartidas top por movimiento.
+funciona|La coincidencia 2+ mejora la priorizacion frente a usar solo IQR.|Baseline IQR marca 344 casos; version actual prioriza 127 casos con evidencia convergente.
+no_funciona_totalmente|Usar solo IQR puede sobredetectar extremos en distribuciones asimetricas.|Se observa discrepancia entre IQR, z-score y LOF en algunos slices.
+costo_tecnico|LOF aporta deteccion local, pero aumenta la latencia frente a IQR.|p95 maximo version actual: 0.0499 segundos; errores: 0.
+usuario|La version actual aumenta utilidad y confianza en la prueba guiada simulada.|Utilidad simulada promedio version actual: 4.67/5.

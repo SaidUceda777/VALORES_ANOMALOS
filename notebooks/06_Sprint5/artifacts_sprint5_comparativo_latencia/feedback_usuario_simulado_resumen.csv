@@ -1,0 +1,3 @@
+version|utilidad_promedio|claridad_promedio|confianza_promedio|tiempo_tarea_promedio_min|tasa_exito_promedio
+actual_iqr_z_lof_2mas|4.666666666666667|4.0|4.333333333333333|5.333333333333333|1.0
+baseline_iqr|3.0|3.3333333333333335|2.6666666666666665|8.333333333333334|0.6666666666666666

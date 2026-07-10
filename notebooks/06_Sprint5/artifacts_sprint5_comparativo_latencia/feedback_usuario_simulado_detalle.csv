@@ -1,0 +1,7 @@
+escenario_usuario|version|utilidad_1_5|claridad_1_5|confianza_1_5|tiempo_tarea_min|tasa_exito|comentario
+Revision de subpartida con outliers claros|baseline_iqr|3|4|3|8.5|1|La regla es simple, pero genera muchos casos para revisar.
+Revision de subpartida con outliers claros|actual_iqr_z_lof_2mas|5|4|5|5.0|1|La coincidencia entre metodos ayuda a priorizar mejor.
+Subpartida con discrepancia entre metodos|baseline_iqr|3|3|2|9.0|0|No explica si el extremo es local o solo una cola de la distribucion.
+Subpartida con discrepancia entre metodos|actual_iqr_z_lof_2mas|4|4|4|6.5|1|El detalle por metodo permite explicar mejor el caso dudoso.
+Revision de tabla final de priorizacion|baseline_iqr|3|3|3|7.5|1|Sirve como primera alerta, pero falta ranking de criticidad.
+Revision de tabla final de priorizacion|actual_iqr_z_lof_2mas|5|4|4|4.5|1|La tabla ayuda a decidir que subpartida revisar primero.

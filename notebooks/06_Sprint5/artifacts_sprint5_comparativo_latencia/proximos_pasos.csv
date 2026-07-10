@@ -1,0 +1,6 @@
+prioridad|tipo|accion|criterio_aceptacion
+1|A/B|Comparar baseline IQR vs version actual IQR+z-score+LOF en el mismo periodo y top 5 subpartidas.|Mayor utilidad percibida, menor ruido operativo y p95 dentro del SLO.
+2|Canary|Ejecutar version actual solo en subpartidas priorizadas antes de generalizar.|Errores menores al SLO y revision manual viable.
+3|Backlog|Incorporar pais, operador, calidad y unidad fisica para explicar heterogeneidad del V.U.|Causas probables mas trazables por slice.
+4|Backlog|Crear detalle explicable por registro: metodo que marca, limite IQR, z-score y score LOF.|Usuario entiende por que un registro fue priorizado.
+5|Backlog|Monitorear drift de distribucion del V.U. por subpartida y periodo.|Alertas cuando cambie la distribucion o el porcentaje de outliers.
